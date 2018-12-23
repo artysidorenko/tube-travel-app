@@ -4,6 +4,7 @@
   "description": "Tube travel app via back end API calls to TFL (w/o use of external libraries)",
   "main": "server.js",
   "scripts": {
+    "start": "node ./src/server.js",
     "test": "node ./src/test/test.js | tap-spec"
   },
   "repository": {
