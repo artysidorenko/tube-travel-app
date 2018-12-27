@@ -2,11 +2,55 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>London Tube Travel Companion</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="index.js"></script>
   </head>
   <body>
-    <h1>
-      This is the home page.
-    </h1>
+    <section class="panel" id="instructions-panel">
+      <svg height="60pt" viewBox="0 -32 384 384" width="60pt" xmlns="http://www.w3.org/2000/svg"><path d="m192 0c-66.824219 0-126.753906 42.207031-149.832031 104h-42.167969v112h42.167969c23.078125 61.792969 83.007812 104 149.832031 104 66.894531 0 126.832031-42.207031 149.847656-104h42.152344v-112h-42.167969c-23.078125-61.792969-83.007812-104-149.832031-104zm0 32c49.328125 0 93.984375 28.734375 115.097656 72h-230.195312c21.105468-43.265625 65.769531-72 115.097656-72zm0 256c-49.328125 0-93.992188-28.734375-115.097656-72h230.21875c-21.058594 43.273438-65.722656 72-115.121094 72zm160-152v48h-320v-48zm0 0"/></svg>
+      <h1>
+        London Tube Travel Companion
+      </h1>
+      <h3>Instructions: click "Use my Location" to list the nearest stops, or search manually for matching tube stations, then select desired station for departure information.</h3>
+    </section>
+    <section class="panel" id="results-panel">
+      <h3>Select your station for live departures:</h3>
+    </section>
+    <section class="panel">
+      <div class="shadow">
+        <button id="find-me" class="button"><span>Use my Location</span></button>
+      </div>
+      <div>or</div>
+      <div id="man-search-bar">
+        <input id="man-search" placeholder="Search for a TFL Station"/>
+        <div class="shadow">
+          <button id="man-submit" class="button"><span>Submit</span></button>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="search-results">
+      <div class="station-list">
+        <h3>Select Your Station:</h3>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+        <a class="station-link" href="/StationInfo">Test Link</a>
+      </div>
+    </section> -->
+    <footer>
+      <p>
+        Built By: PJSmooth/Arty Sidorenko
+      </p>
+      <p>
+        API source: Transport for London Unified API
+      </p>
+      <p>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+    </footer>
   </body>
 </html>

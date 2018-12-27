@@ -1,0 +1,153 @@
+body  {
+  background-color: rgb(149, 200, 180);
+  font-family: sans-serif;
+  padding-top: 50px;
+}
+
+svg {
+  float: left;
+  padding: 3%;
+}
+
+#instructions-panel, #results-panel  {
+  height: 230px;
+}
+
+#results-panel  {
+  display: none;
+}
+
+.panel  {
+  padding: 10px;
+  border: 3px solid rgb(82, 7, 36);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.button  {
+  background-color: rgba(125, 209, 176, 0.7);
+  color: rgb(224, 222, 173);
+  font-size: large;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 2px solid rgb(82, 7, 36);
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.shadow, #man-search-bar  {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#man-search {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: rgb(191, 190, 160);
+  color: rgb(80, 80, 59);
+}
+
+.shadow {
+  background-color: black;
+  border-radius: 5px;
+}
+
+h3  {
+  display: block;
+  width: 100%;
+}
+
+.station-list  {
+  max-width: 500px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  animation: expand 0.5s ease-in-out;
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.station-link  {
+  margin: 5px;
+  width: 48%;
+  line-height: 1.5;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+  transition: 0.2s;
+  background-color: rgba(110, 101, 95, 0.4);
+}
+
+.station-link:hover {
+  background-color: rgb(110, 101, 95);
+}
+
+footer  {
+  margin: auto;
+  max-width: 500px;
+  transition: 0.5s;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-style: italic;
+}
+
+footer > p {
+  margin: 5px;
+  font-size: small;
+}
+
+footer > p > a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
