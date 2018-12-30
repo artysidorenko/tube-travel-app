@@ -9,7 +9,7 @@ server.listen(port);
 console.log('Server running, listening on http://' + host + ':' + port);
 
 server.on('close', function() {
-  console.log('Server now closed.');
+  console.log('Server request completed/Server closed.');
 });
 
 module.exports = server;
