@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>London Tube Travel Companion</title>
     <link href="styles.css" rel="stylesheet"/>
@@ -16,10 +17,36 @@
     </section>
     <section class="panel" id="results-panel">
       <h3>Select your station for live departures:</h3>
+      <ul>
+        <li>
+          Line: District
+        </li>
+        <li>
+          To: Check Front of Train
+        </li>
+        <li>
+          Arriving: 14 min
+        </li>
+      </ul>
+    </section>
+    <section class="panel" id="trains-panel" >
+      <!-- style="display: block" -->
+      <h3 id="trains-header"></h3>
+      <!-- <ul>
+        <li>
+          Line: District
+        </li>
+        <li>
+          To: Check Front of Train
+        </li>
+        <li>
+          Arriving: 14 min
+        </li>
+      </ul> -->
     </section>
     <section class="panel">
       <div class="shadow">
-        <button id="find-me" class="button"><span>Use my Location</span></button>
+        <button id="find-me" class="button"><span>List Closest Stops (<2km)</span></button>
       </div>
       <div>or</div>
       <div id="man-search-bar">
@@ -50,7 +77,7 @@
       <p>
         API source: Transport for London Unified API
       </p>
-      <p>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+      <p>Icon made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
     </footer>
   </body>
 </html>

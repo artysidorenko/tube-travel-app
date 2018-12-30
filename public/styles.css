@@ -1,3 +1,15 @@
+@media screen and (max-width: 450px) {
+  .panel  {
+    max-width: 350px!important;
+  }
+  #instructions-panel, #results-panel, #trainsPanel  {
+    height: 330px!important;
+  }
+  .station-link {
+    width: 46%!important;
+  }
+}
+
 body  {
   background-color: rgb(149, 200, 180);
   font-family: sans-serif;
@@ -9,12 +21,28 @@ svg {
   padding: 3%;
 }
 
-#instructions-panel, #results-panel  {
+#instructions-panel, #results-panel, #trainsPanel  {
   height: 230px;
 }
 
 #results-panel  {
   display: none;
+}
+
+#trains-panel  {
+  display: none;
+}
+
+#trains-panel > * {
+  text-align: left;
+  list-style-type: none;
+  list-style: none;
+  font-weight: normal;
+}
+
+#trains-list > ul > li {
+  list-style-type: none;
+  font-weight: normal;
 }
 
 .panel  {
@@ -40,7 +68,7 @@ svg {
 }
 
 .shadow, #man-search-bar  {
-  max-width: 300px;
+  max-width: 400px;
   display: block;
   margin: auto;
 }
